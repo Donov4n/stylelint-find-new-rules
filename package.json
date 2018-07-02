@@ -24,11 +24,11 @@
   },
   "lint-staged": {
     "*.js": [
-      "lint-staged-stash",
-      "base-eslint --fix --max-warnings 0",
-      "base-prettier --write",
+      "npm run lint-staged-stash",
+      "npm run base-eslint -- --fix --max-warnings 0",
+      "npm run base-prettier -- --write",
       "git add",
-      "lint-staged-unstash"
+      "npm run lint-staged-unstash"
     ]
   },
   "bin": {
@@ -52,7 +52,7 @@
     "eslint-plugin-promise": "3.7.0",
     "husky": "0.14.3",
     "jest": "22.4.2",
-    "lint-staged": "7.0.0",
+    "lint-staged": "^7.0.5",
     "prettier": "1.11.1",
     "stylelint": "9.1.1",
     "stylelint-config-recommended": "2.1.0",

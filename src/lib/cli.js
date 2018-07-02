@@ -13,7 +13,7 @@ const pkg = require('../../package.json');
 const isDDeprecated = require('./is-deprecated');
 
 const rules = {
-  stylelintAll: _.keys(stylelint.rules),
+  stylelintAll: Object.keys(stylelint.rules),
   stylelintDeprecated: [],
   stylelintNoDeprecated: [],
   userRulesNames: []
@@ -146,23 +146,25 @@ function validate(cosmiconfig) {
  * Get user rules
  * Gather rules from `extends` as well
  */
-function getUserRules(config) {
-  let rulesNames = _.keys(config.rules);
+function getUserRules(userConfig) {
+  const _retrieveRules = config => {
+    const rulesNames = Object.keys(config.rules);
 
-  // Handle extends
-  if (config.extends) {
-    const normalizedExtends = _.isArray(config.extends) ? config.extends : [config.extends];
+    // Handle extends
+    if (config.extends) {
+      const _extends = Array.isArray(config.extends) ? config.extends : [config.extends];
 
-    _.forEach(normalizedExtends, extendName => {
-      // Get the `extends` config file
-      const configData = require(extendName);
-      const extendRulesNames = _.keys(configData.rules);
+      _extends.forEach(extendName => {
+        const extendedConfig = require(extendName);
 
-      rulesNames = rulesNames.concat(extendRulesNames);
-    });
-  }
+        rulesNames.push(..._retrieveRules(extendedConfig));
+      });
+    }
 
-  rules.userRulesNames = _.sortedUniq(rulesNames);
+    return _.sortedUniq(rulesNames);
+  };
+
+  rules.userRulesNames = _retrieveRules(userConfig);
 }
 
 /**
