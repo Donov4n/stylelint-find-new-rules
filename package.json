@@ -1,75 +1,35 @@
 {
-  "name": "stylelint-find-rules",
-  "version": "1.1.1",
-  "description": "Find stylelint rules that you don't have in your config",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "fail": "node index.js --config tests/configs/deprecated-and-new.config.js",
-    "base-prettier": "prettier --ignore-path .gitignore",
-    "base-eslint": "eslint --ignore-path .gitignore",
-    "format": "npm run base-eslint -- --fix \"**/*.js\" && npm run base-prettier -- --write \"**/*.js\"",
-    "lint-prettier": "npm run base-prettier -- -l \"**/*.js\"",
-    "lint-eslint": "npm run base-eslint -- --rule 'no-console: 1' --max-warnings 0 \"**/*.js\"",
-    "lint-eslint-config-prettier": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "lint": "npm run lint-eslint-config-prettier && npm run lint-prettier && npm run lint-eslint",
-    "test": "jest ./src",
-    "test-e2e": "jest --runInBand ./e2e",
-    "test-watch": "npm run test -- --watch --notify",
-    "test-coverage": "npm run test -- --coverage",
-    "test-ci": "npm run test-coverage && npm run test-e2e",
-    "lint-staged-stash": "git diff --ignore-submodules --binary --no-color --no-ext-diff > lint-staged.diff && git checkout . && true",
-    "lint-staged-unstash": "[ -s lint-staged.diff ] && git apply --whitespace=nowarn lint-staged.diff; rm -f lint-staged.diff && true",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint-staged-stash",
-      "npm run base-eslint -- --fix --max-warnings 0",
-      "npm run base-prettier -- --write",
-      "git add",
-      "npm run lint-staged-unstash"
-    ]
-  },
-  "bin": {
-    "stylelint-find-rules": "src/bin/stylelint-find-rules.js"
-  },
-  "dependencies": {
-    "bluebird": "3.5.1",
-    "chalk": "2.3.2",
-    "columnify": "1.5.4",
-    "cosmiconfig": "4.0.0",
-    "lodash": "4.17.5",
-    "yargs": "11.0.0"
-  },
-  "devDependencies": {
-    "babel-eslint": "8.2.2",
-    "eslint": "4.18.2",
-    "eslint-config-prettier": "2.9.0",
-    "eslint-find-rules": "3.2.1",
-    "eslint-plugin-jest": "21.14.0",
-    "eslint-plugin-lodash": "2.6.1",
-    "eslint-plugin-promise": "3.7.0",
-    "husky": "0.14.3",
-    "jest": "22.4.2",
-    "lint-staged": "^7.0.5",
-    "prettier": "1.11.1",
-    "stylelint": "9.1.1",
-    "stylelint-config-recommended": "2.1.0",
-    "stylelint-config-standard": "18.2.0"
-  },
-  "peerDependencies": {
-    "stylelint": ">=7.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexilyaev/stylelint-find-rules.git"
-  },
-  "keywords": [],
-  "author": "Alex Ilyaev",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alexilyaev/stylelint-find-rules/issues"
-  },
-  "homepage": "https://github.com/alexilyaev/stylelint-find-rules#readme"
+    "name"        : "stylelint-find-rules",
+    "version"     : "1.1.1",
+    "description" : "Find stylelint rules that you don't have in your config",
+    "homepage"    : "https://github.com/alexilyaev/stylelint-find-rules#readme",
+    "author"      : "Alex Ilyaev",
+    "license"     : "MIT",
+    "repository"  : "Donov4n/stylelint-find-rules",
+    "bin"         : {
+        "stylelint-find-rules": "bin/stylelint-find-rules.js"
+    },
+    "scripts": {
+        "lint": "eslint --ext .js lib"
+    },
+    "dependencies": {
+        "chalk"            : "~2.3.2",
+        "columnify"        : "~1.5.4",
+        "cosmiconfig"      : "~4.0.0",
+        "lodash"           : "~4.17.5",
+        "require-relative" : "~0.8.7",
+        "yargs"            : "~11.0.0"
+    },
+    "devDependencies": {
+        "eslint"                    : "^3.19.0",
+        "eslint-config-airbnb-base" : "^11.2.0",
+        "eslint-plugin-import"      : "^2.3.0",
+        "stylelint"                 : "^9.1.1"
+    },
+    "peerDependencies": {
+        "stylelint": ">=7.0.0"
+    },
+    "engines": {
+        "node": ">=6"
+    }
 }

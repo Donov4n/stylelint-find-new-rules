@@ -1,7 +1,3 @@
-# Based on:
-# https://github.com/h5bp/html5-boilerplate/blob/master/.gitattributes
-# http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/
-
 # Auto detect text files and perform LF normalization
 * text=auto
 

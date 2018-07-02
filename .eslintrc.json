@@ -1,0 +1,49 @@
+{
+    "extends"       : "airbnb-base",
+    "env"           : { "node": true },
+    "parserOptions" : { "sourceType" : "script" },
+    "rules"         : {
+        "strict" : ["error", "global"],
+        "indent" : ["error", 4, {
+            "SwitchCase"          : 1,
+            "VariableDeclarator"  : 1,
+            "outerIIFEBody"       : 1,
+            "FunctionDeclaration" : { "parameters": 1, "body": 1 },
+            "FunctionExpression"  : { "parameters": 1, "body": 1 }
+        }],
+        "quotes"                 : ["error", "single", { "allowTemplateLiterals": true }],
+        "quote-props"            : ["error", "consistent"],
+        "camelcase"              : ["error", { "properties": "always" }],
+        "func-style"             : ["error", "expression"],
+        "no-empty-function"      : ["error"],
+        "no-param-reassign"      : ["off"],
+        "no-underscore-dangle"   : ["off"],
+        "class-methods-use-this" : ["off"],
+        "func-names"             : ["off"],
+        "no-continue"            : ["off"],
+        "no-implicit-globals"    : ["error"],
+        "comma-dangle"           : ["error", {
+            "arrays"    : "only-multiline",
+            "objects"   : "only-multiline",
+            "imports"   : "only-multiline",
+            "exports"   : "only-multiline",
+            "functions" : "only-multiline"
+        }],
+        "key-spacing": ["error", {
+            "singleLine" : { "beforeColon": false, "afterColon": true },
+            "multiLine"  : { "beforeColon": false, "afterColon": true },
+            "align"      : { "beforeColon": true, "afterColon": true, "on": "colon" }
+        }],
+        "no-multi-spaces": ["error", {
+            "exceptions": {
+                "ImportDeclaration"    : true,
+                "Property"             : true,
+                "ClassProperty"        : true,
+                "VariableDeclarator"   : true,
+                "AssignmentExpression" : true
+            }
+        }],
+        "global-require"            : ["off"],
+        "import/no-dynamic-require" : ["off"]
+    }
+}
