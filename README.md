@@ -1,7 +1,6 @@
 # stylelint-find-rules
 
-[![MIT License](https://img.shields.io/npm/l/stylelint-find-rules.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![MIT License](https://img.shields.io/npm/l/eslint-find-rules.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 Find [stylelint](https://github.com/stylelint/stylelint) rules that are not configured in your stylelint config.
 

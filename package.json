@@ -23,11 +23,10 @@
     "devDependencies": {
         "eslint"                    : "^3.19.0",
         "eslint-config-airbnb-base" : "^11.2.0",
-        "eslint-plugin-import"      : "^2.3.0",
-        "stylelint"                 : "^9.1.1"
+        "eslint-plugin-import"      : "^2.3.0"
     },
     "peerDependencies": {
-        "stylelint": ">=7.0.0"
+        "stylelint": "^8 || ^9"
     },
     "engines": {
         "node": ">=6"
