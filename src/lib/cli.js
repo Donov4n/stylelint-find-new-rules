@@ -10,7 +10,7 @@ const Promise = require('bluebird');
 const EOL = require('os').EOL;
 
 const pkg = require('../../package.json');
-const isDDeprecated = require('./is-deprecated');
+const isDeprecated = require('./is-deprecated');
 
 const rules = {
   stylelintAll: Object.keys(stylelint.rules),
@@ -177,7 +177,7 @@ function findDeprecatedStylelintRules() {
     return Promise.resolve();
   }
 
-  const isDeprecatedPromises = _.map(rules.stylelintAll, isDDeprecated);
+  const isDeprecatedPromises = _.map(rules.stylelintAll, isDeprecated);
 
   return Promise.all(isDeprecatedPromises).then(rulesIsDeprecated => {
     rules.stylelintDeprecated = _.filter(
