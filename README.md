@@ -1,93 +1,56 @@
-# stylelint-find-rules
+# stylelint-find-new-rules
 
-[![MIT License](https://img.shields.io/npm/l/eslint-find-rules.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+> Find [stylelint](https://github.com/stylelint/stylelint) rules that are not configured in your stylelint config.  
 
-Find [stylelint](https://github.com/stylelint/stylelint) rules that are not configured in your stylelint config.
+> Use this for your own [Stylelint](https://github.com/stylelint/stylelint) shareable configuration to list 
+> current configured rules, all-available rules, unused rules, and invalid / deprecated rules.
 
-> Inspired by [eslint-find-rules](https://github.com/sarbbottam/eslint-find-rules)
+## Acknowledgment
 
-## Example Output
-
-![Example](example.png)
+This module is an extended version of [stylelint-find-rules](https://github.com/alexilyaev/stylelint-find-rules), created by Alex Ilyaev.
 
 ## Installation
 
 Install as a dev dependency of your project:
 
-```
-yarn add -D stylelint-find-rules
-```
+```bash
+# - Yarn
+yarn add stylelint-find-new-rules --dev
 
-Or with `npm`
-
-```
-npm i -D stylelint-find-rules
+# - NPM
+npm install --save-dev stylelint-find-new-rules
 ```
 
 ## Usage
 
-This package requires `stylelint` to be already installed in the project, as it will search for
-available rules from that package.
+> It is expected to be used as local utility, as it needs `stylelint` and the `stylelint-plugins` being referred 
+> by the `stylelint-config` file, to be installed. Using it as a global utility, will error out, if `stylelint` 
+> and the `stylelint-plugins` being referred by the `stylelint-config` file, are not installed globally.
 
-### npm script
+The intended usage is as an npm script:
 
-```
+```json
 {
   ...
   "scripts": {
-    "stylelint-find-unused-rules": "stylelint-find-rules"
+    "stylelint-find-rules": "stylelint-find-new-rules [option]"
   }
   ...
 }
 ```
 
-### Command line
+Then run it with:
 
-Using `npx`:
+```bash
+# - Yarn
+yarn stylelint-find-rules
+
+# - NPM
+npm run --silent stylelint-find-rules
+```
+## Options
+
 
 ```
-npx stylelint-find-rules
-```
 
-Or the old way:
-
-```
-./node_modules/.bin/stylelint-find-rules
-```
-
-### Options
-
-```
-stylelint-find-rules [options]
-
-General:
-  -h, --help  Show help                                                                    [boolean]
-  --config    Optional, path to a custom config file (passed as `configPath` to cosmiconfig)
-
-Options:
-  --version         Show version number                                                    [boolean]
-  -u, --unused      Find available rules that are not configured
-                    To disable, set to false or use --no-u                 [boolean] [default: true]
-  -d, --deprecated  Find deprecated configured rules
-                    To disable, set to false or use --no-d                 [boolean] [default: true]
-  -i, --invalid     Find configured rules that are no longer available
-                    To disable, set to false or use --no-i                 [boolean] [default: true]
-  -c, --current     Find all currently configured rules                                    [boolean]
-  -a, --available   Find all available stylelint rules                                     [boolean]
-
-Examples:
-  stylelint-find-rules
-  stylelint-find-rules --no-d --no-i
-  stylelint-find-rules --config path/to/custom.config.js
-```
-
-## Supported configs
-
-Just like stylelint, this package uses [cosmiconfig](https://github.com/davidtheclark/cosmiconfig)
-to find your config data, so if stylelint works for you, this should too.
-
-### Custom config file
-
-```
-./node_modules/.bin/stylelint-find-rules --config my-custom-config.js
 ```
