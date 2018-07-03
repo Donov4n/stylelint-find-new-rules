@@ -68,3 +68,27 @@ npm run --silent stylelint-find-rules
 -c, --current     Find all currently configured rules.
 -a, --available   Find all available stylelint rules.
 ```
+
+## API Usage
+
+```js
+const stylelintRules = require('stylelint-find-new-rules');
+
+stylelintRules('./my-config-file.js').then((rules) => {
+    // `rules` format:
+    // {
+    //     used       : [[RULE], [RULE], ...],
+    //     all        : [[RULE], [RULE], ...],
+    //     unused     : [[RULE], [RULE], ...],
+    //     deprecated : [[RULE], [RULE], ...],
+    //     invalid    : [[RULE], [RULE], ...]
+    // }
+    // 
+    // `[RULE]` format:
+    // {
+    //     name         : '[Rule name]',
+    //     url          : '[URL of the rule's documentation if available or `null`]',
+    //     isDeprecated : [boolean]
+    // }
+});
+```

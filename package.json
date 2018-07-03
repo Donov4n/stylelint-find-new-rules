@@ -1,15 +1,14 @@
 {
-    "name"        : "stylelint-find-new-rules",
-    "version"     : "1.0.0",
-    "description" : "Find stylelint rules that you don't have in your config",
-    "homepage"    : "https://github.com/Donov4n/stylelint-find-new-rules",
-    "license"     : "MIT",
-    "repository"  : "Donov4n/stylelint-find-new-rules",
-    "author"      : "Donovan Lambert <d.lambert@cirize.com>",
-    "contributors": [
-        "Alex Ilyaev"
-    ],
-    "bin": {
+    "name"         : "stylelint-find-new-rules",
+    "version"      : "1.0.0",
+    "description"  : "Find stylelint rules that you don't have in your config",
+    "homepage"     : "https://github.com/Donov4n/stylelint-find-new-rules",
+    "license"      : "MIT",
+    "repository"   : "Donov4n/stylelint-find-new-rules",
+    "author"       : "Donovan Lambert <d.lambert@cirize.com>",
+    "contributors" : ["Alex Ilyaev"],
+    "main"         : "lib/index.js",
+    "bin"          : {
         "stylelint-find-new-rules": "bin/stylelint-find-new-rules.js"
     },
     "scripts": {
