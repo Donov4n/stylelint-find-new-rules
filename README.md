@@ -2,9 +2,9 @@
 
 > Find [stylelint](https://github.com/stylelint/stylelint) rules that are not configured in your stylelint config.  
 
-> Use this for your own [Stylelint](https://github.com/stylelint/stylelint) shareable 
-> configuration to list current configured rules, all-available rules,  
-> unused rules, and invalid / deprecated rules.
+> Use this for your own [Stylelint](https://github.com/stylelint/stylelint) 
+> shareable configuration to list current configured rules,  
+> all-available rules unused rules, and invalid / deprecated rules.
 
 ## Acknowledgment
 
@@ -34,11 +34,14 @@ The intended usage is as an npm script:
 {
   ...
   "scripts": {
-    "stylelint-find-rules": "stylelint-find-new-rules [option]"
+    "stylelint-find-rules": "stylelint-find-new-rules [options] <file>"
   }
   ...
 }
 ```
+
+__Note:__ If the `<file>` argument is not passed, this module will use the same resolution mechanism 
+as Stylelint ([cosmiconfig](https://github.com/davidtheclark/cosmiconfig)) to find your config data.
 
 Then run it with:
 
@@ -53,10 +56,6 @@ npm run --silent stylelint-find-rules
 ## Options
 
 ```
---config          Optional, path to a custom config file.
-
----
-
 -u, --unused      Find available rules that are not configured.         [default: true]
                   To disable, set to false or use --no-u
                   
