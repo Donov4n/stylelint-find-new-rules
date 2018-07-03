@@ -44,6 +44,13 @@
             }
         }],
         "global-require"            : ["off"],
-        "import/no-dynamic-require" : ["off"]
+        "import/no-dynamic-require" : ["off"],
+        "operator-linebreak"        : ["error", "after", {
+            "overrides": {
+                "=" : "none",
+                "?" : "before",
+                ":" : "before"
+            }
+        }]
     }
 }
