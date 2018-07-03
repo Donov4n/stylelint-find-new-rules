@@ -19,7 +19,6 @@
         "chalk"            : "~2.3.2",
         "columnify"        : "~1.5.4",
         "cosmiconfig"      : "~4.0.0",
-        "lodash"           : "~4.17.5",
         "require-relative" : "~0.8.7",
         "yargs"            : "~11.0.0"
     },
