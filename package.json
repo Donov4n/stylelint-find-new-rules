@@ -27,7 +27,7 @@
         "eslint-plugin-import"      : "^2.14.0"
     },
     "peerDependencies": {
-        "stylelint": "^8 || ^9"
+        "stylelint": "^8 || ^9 || ^10"
     },
     "engines": {
         "node": ">=6"
