@@ -1,4 +1,4 @@
-## 1.0.2 (unreleased)
+## 1.0.2 (2019-04-19)
 - Update dependencies.
 - Bump stylelint peer dependencies.
 - Show the "up-to-date" message only if there are no unused, invalids or outdated rules.  
