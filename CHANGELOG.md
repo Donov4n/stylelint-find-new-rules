@@ -1,3 +1,6 @@
+## 1.1.0 (unreleased)
+- Update dev dependencies.
+
 ## 1.0.2 (2019-04-19)
 - Update dependencies.
 - Bump stylelint peer dependencies.
