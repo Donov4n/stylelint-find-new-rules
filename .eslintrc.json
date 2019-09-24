@@ -29,6 +29,9 @@
             "exports"   : "only-multiline",
             "functions" : "only-multiline"
         }],
+        "arrow-parens": ["error", "as-needed", {
+            "requireForBlockBody": true
+        }],
         "key-spacing": ["error", {
             "singleLine" : { "beforeColon": false, "afterColon": true },
             "multiLine"  : { "beforeColon": false, "afterColon": true },
@@ -43,6 +46,7 @@
                 "AssignmentExpression" : true
             }
         }],
+        "prefer-object-spread"      : ["off"],
         "global-require"            : ["off"],
         "import/no-dynamic-require" : ["off"],
         "operator-linebreak"        : ["error", "after", {
