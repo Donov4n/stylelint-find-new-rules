@@ -1,4 +1,4 @@
-## 1.1.0 (unreleased)
+## 1.1.0 (2019-09-24)
 - Update dependencies.
 - Add stylelint 11 to supported peer dependency versions.
 
