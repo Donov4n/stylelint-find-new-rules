@@ -17,9 +17,9 @@
     "dependencies": {
         "chalk"            : "~2.4.2",
         "columnify"        : "~1.5.4",
-        "cosmiconfig"      : "~5.2.0",
+        "cosmiconfig"      : "~5.2.1",
         "require-relative" : "~0.8.7",
-        "yargs"            : "~13.2.2"
+        "yargs"            : "~14.0.0"
     },
     "devDependencies": {
         "eslint"                    : "^6.4.0",
