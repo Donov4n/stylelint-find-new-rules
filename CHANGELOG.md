@@ -1,4 +1,4 @@
-## 1.2.0 (unreleased)
+## 1.2.0 (2019-11-30)
 - Update dev dependencies.
 - Add stylelint 12 to supported peer dependency versions.
 
