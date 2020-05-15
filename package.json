@@ -15,21 +15,21 @@
         "lint": "eslint --ext .js lib"
     },
     "dependencies": {
-        "chalk"            : "~3.0.0",
+        "chalk"            : "~4.0.0",
         "columnify"        : "~1.5.4",
         "cosmiconfig"      : "~6.0.0",
         "require-relative" : "~0.8.7",
-        "yargs"            : "~15.0.2"
+        "yargs"            : "~15.3.1"
     },
     "devDependencies": {
-        "eslint"                    : "^6.7.2",
-        "eslint-config-airbnb-base" : "^14.0.0",
-        "eslint-plugin-import"      : "^2.18.2"
+        "eslint"                    : "^7.0.0",
+        "eslint-config-airbnb-base" : "^14.1.0",
+        "eslint-plugin-import"      : "^2.20.2"
     },
     "peerDependencies": {
-        "stylelint": "^8 || ^9 || ^10 || ^11 || ^12"
+        "stylelint": "^8 || ^9 || ^10 || ^11 || ^12 || ^13"
     },
     "engines": {
-        "node": ">=6"
+        "node": ">=10"
     }
 }

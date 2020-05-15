@@ -1,3 +1,8 @@
+## 2.0.0 (unreleased)
+- Update dependencies.
+- Add stylelint 13 to supported peer dependency versions.
+- Require Node.js 10.
+
 ## 1.2.0 (2019-11-30)
 - Update dev dependencies.
 - Add stylelint 12 to supported peer dependency versions.
