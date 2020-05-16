@@ -2,6 +2,7 @@
 - Update dependencies.
 - Add stylelint 13 to supported peer dependency versions.
 - Require Node.js 10.
+- Fixes support for relative / absolute paths in `extends` and `plugins` config. keys (#7).
 
 ## 1.2.0 (2019-11-30)
 - Update dev dependencies.
