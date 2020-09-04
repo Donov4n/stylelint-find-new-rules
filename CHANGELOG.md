@@ -1,5 +1,7 @@
 ## 3.0.0 (unreleased)
 - Update dependencies.
+- This library now require at least Stylelint 13.
+- Fixes the deprecated rules wrongly identified as "unused rules" (#9).
 
 ## 2.0.0 (2020-05-16)
 - Update dependencies.
