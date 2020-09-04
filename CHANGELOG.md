@@ -1,3 +1,6 @@
+## 3.0.0 (unreleased)
+- Update dependencies.
+
 ## 2.0.0 (2020-05-16)
 - Update dependencies.
 - Add stylelint 13 to supported peer dependency versions.
