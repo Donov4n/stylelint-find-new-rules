@@ -1,6 +1,6 @@
 {
     "name"         : "stylelint-find-new-rules",
-    "version"      : "2.0.0",
+    "version"      : "3.0.0",
     "description"  : "Find stylelint rules that you don't have in your config",
     "homepage"     : "https://github.com/Donov4n/stylelint-find-new-rules",
     "license"      : "MIT",
@@ -15,19 +15,19 @@
         "lint": "eslint --ext .js lib"
     },
     "dependencies": {
-        "chalk"            : "~4.0.0",
-        "columnify"        : "~1.5.4",
-        "cosmiconfig"      : "~6.0.0",
-        "require-relative" : "~0.8.7",
-        "yargs"            : "~15.3.1"
+        "chalk": "~4.1.0",
+        "columnify": "~1.5.4",
+        "cosmiconfig": "~7.0.0",
+        "require-relative": "~0.8.7",
+        "yargs": "~15.4.1"
     },
     "devDependencies": {
-        "eslint"                    : "^7.0.0",
-        "eslint-config-airbnb-base" : "^14.1.0",
-        "eslint-plugin-import"      : "^2.20.2"
+        "eslint": "^7.8.1",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-plugin-import": "^2.22.0"
     },
     "peerDependencies": {
-        "stylelint": "^8 || ^9 || ^10 || ^11 || ^12 || ^13"
+        "stylelint": "^13"
     },
     "engines": {
         "node": ">=10"
