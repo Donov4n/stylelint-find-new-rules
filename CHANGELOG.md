@@ -1,3 +1,6 @@
+## 3.0.1 (unreleased)
+- Update dependencies.
+
 ## 3.0.0 (2020-09-04)
 - Update dependencies.
 - This library now require at least Stylelint 13.
