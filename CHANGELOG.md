@@ -1,3 +1,6 @@
+## 3.0.2 (2021-08-14)
+- Update dependencies.
+
 ## 3.0.1 (2020-10-03)
 - Update dependencies.
 - Fixes the detection of built-in deprecated rules.
