@@ -1,4 +1,4 @@
-## 3.0.2 (unreleased)
+## 3.0.2 (2021-08-14)
 - Update dependencies.
 
 ## 3.0.1 (2020-10-03)
