@@ -1,3 +1,6 @@
+## 3.0.4 (UNRELEASED)
+- Update dependencies.
+
 ## 3.0.3 (2021-11-07)
 - Add Stylelint 14 to the supported versions.
 
