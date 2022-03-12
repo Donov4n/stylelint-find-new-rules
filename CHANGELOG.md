@@ -1,3 +1,6 @@
+## 4.0.0 (unreleased)
+- Update dependencies.
+
 ## 3.0.4 (2021-11-07)
 - Update dependencies.
 - Update the stylelint rules URL.
