@@ -1,6 +1,6 @@
 {
     "name": "stylelint-find-new-rules",
-    "version": "3.0.4",
+    "version": "4.0.0",
     "description": "Find stylelint rules that you don't have in your config",
     "homepage": "https://github.com/Donov4n/stylelint-find-new-rules",
     "license": "MIT",
@@ -18,17 +18,16 @@
     },
     "dependencies": {
         "columnify": "~1.6.0",
-        "cosmiconfig": "~7.0.1",
         "picocolors": "^1.0.0",
-        "require-relative": "~0.8.7",
         "yargs": "~17.3.1"
     },
     "devDependencies": {
         "@pulsanova/eslint-config-base": "~2.1.2",
-        "eslint": "^8.11.0"
+        "eslint": "^8.11.0",
+        "stylelint": "^14"
     },
     "peerDependencies": {
-        "stylelint": "^13 || ^14"
+        "stylelint": "^14"
     },
     "engines": {
         "node": ">=10"

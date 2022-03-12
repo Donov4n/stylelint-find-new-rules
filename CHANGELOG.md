@@ -1,4 +1,6 @@
 ## 4.0.0 (unreleased)
+- __BREAKING:__ Removed Stylelint 13 support.
+- Improves / Fixes configuration retrieval (#13).
 - Update dependencies.
 
 ## 3.0.4 (2021-11-07)
