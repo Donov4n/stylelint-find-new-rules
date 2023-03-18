@@ -1,4 +1,4 @@
-## 4.1.0 (UNRELEASED)
+## 4.1.0 (2023-03-18)
 - Add stylelint 15 to supported peer dependency versions (#14).
 
 ## 4.0.0 (2022-03-12)
