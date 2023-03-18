@@ -1,3 +1,6 @@
+## 4.1.0 (UNRELEASED)
+- Add stylelint 15 to supported peer dependency versions (#14).
+
 ## 4.0.0 (2022-03-12)
 - __BREAKING:__ Removed Stylelint 13 support.
 - Improves / Fixes configuration retrieval (#13).

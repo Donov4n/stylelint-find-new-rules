@@ -24,10 +24,10 @@
     "devDependencies": {
         "@pulsanova/eslint-config-base": "~2.1.2",
         "eslint": "^8.11.0",
-        "stylelint": "^14"
+        "stylelint": "^15"
     },
     "peerDependencies": {
-        "stylelint": "^14"
+        "stylelint": "^14 || ^15"
     },
     "engines": {
         "node": ">=10"
