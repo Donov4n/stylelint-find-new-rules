@@ -1,3 +1,6 @@
+## 4.1.1 (2023-08-17)
+- Fix peerDependencies declaration for Stylelint 14 (#16, 👏 @thibaudcolas)
+
 ## 4.1.0 (2023-03-18)
 - Add stylelint 15 to supported peer dependency versions (#14).
 
