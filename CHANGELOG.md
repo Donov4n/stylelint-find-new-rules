@@ -1,3 +1,6 @@
+## 4.1.2 (UNRELEASED)
+- Fix support for "plugin objects" in configurations (#17).
+
 ## 4.1.1 (2023-08-17)
 - Fix peerDependencies declaration for Stylelint 14 (#16, 👏 @thibaudcolas)
 
