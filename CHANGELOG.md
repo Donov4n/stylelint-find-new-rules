@@ -1,3 +1,13 @@
+## 5.0.0 (UNRELEASED)
+- Update dependencies.
+- Add support for Stylelint 16.
+- [BREAKING] Remove support for Stylelint < 16.
+- [BREAKING] This package now require node >= 18.12.0.
+- [BREAKING] This package is now an ESM package. 
+  => `require('stylelint-find-new-rules')` is not supported anymore 
+     when using the node API (you should now use the ESM API, see the 
+     [README](./README.md)).
+
 ## 4.1.2 (2023-09-02)
 - Fix support for "plugin objects" in configurations (#17).
 

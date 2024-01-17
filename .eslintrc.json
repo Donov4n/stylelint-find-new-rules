@@ -1,4 +1,11 @@
 {
-    "extends" : "@pulsanova/base",
-    "env": { "node": true }
+    "extends" : "@pulsanova/node",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "import/extensions": ["error", "always", {
+            "ignorePackages": true
+        }]
+    }
 }

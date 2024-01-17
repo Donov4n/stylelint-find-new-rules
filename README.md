@@ -72,23 +72,23 @@ npm run --silent stylelint-find-rules
 ## API Usage
 
 ```js
-const stylelintRules = require('stylelint-find-new-rules');
+import stylelintRules from 'stylelint-find-new-rules';
 
-stylelintRules('./my-config-file.js').then((rules) => {
-    // `rules` format:
-    // {
-    //     used       : [[RULE], [RULE], ...],
-    //     all        : [[RULE], [RULE], ...],
-    //     unused     : [[RULE], [RULE], ...],
-    //     deprecated : [[RULE], [RULE], ...],
-    //     invalid    : [[RULE], [RULE], ...]
-    // }
-    // 
-    // `[RULE]` format:
-    // {
-    //     name         : '[Rule name]',
-    //     url          : '[URL of the rule's documentation if available or `null`]',
-    //     isDeprecated : [boolean]
-    // }
-});
+const rules = await stylelintRules('./my-config-file.js');
+
+// `rules` format:
+// {
+//     used       : [[RULE], [RULE], ...],
+//     all        : [[RULE], [RULE], ...],
+//     unused     : [[RULE], [RULE], ...],
+//     deprecated : [[RULE], [RULE], ...],
+//     invalid    : [[RULE], [RULE], ...]
+// }
+// 
+// `[RULE]` format:
+// {
+//     name         : '[Rule name]',
+//     url          : '[URL of the rule's documentation if available or `null`]',
+//     isDeprecated : [boolean]
+// }
 ```

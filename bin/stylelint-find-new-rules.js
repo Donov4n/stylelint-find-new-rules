@@ -1,5 +1,3 @@
 #!/usr/bin/env node
 
-'use strict';
-
-require('../lib/cli');
+import '../lib/cli.js';

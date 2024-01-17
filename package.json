@@ -9,9 +9,10 @@
     "contributors": [
         "Alex Ilyaev"
     ],
-    "main": "lib/index.js",
+    "exports": "./lib/index.js",
+    "type": "module",
     "bin": {
-        "stylelint-find-new-rules": "bin/stylelint-find-new-rules.js"
+        "stylelint-find-new-rules": "./bin/stylelint-find-new-rules.js"
     },
     "scripts": {
         "lint": "eslint --ext .js lib"
@@ -19,17 +20,19 @@
     "dependencies": {
         "columnify": "~1.6.0",
         "picocolors": "^1.0.0",
-        "yargs": "~17.3.1"
+        "read-package-up": "^11.0.0",
+        "read-pkg": "^9.0.1",
+        "yargs": "~17.7.2"
     },
     "devDependencies": {
-        "@pulsanova/eslint-config-base": "~2.1.2",
-        "eslint": "^8.11.0",
-        "stylelint": "^15"
+        "@pulsanova/eslint-config-node": "~2.3.0",
+        "eslint": "^8.56.0",
+        "stylelint": "^16"
     },
     "peerDependencies": {
-        "stylelint": "^14.2.0 || ^15"
+        "stylelint": "^16"
     },
     "engines": {
-        "node": ">=10"
+        "node": ">=18.12.0"
     }
 }
