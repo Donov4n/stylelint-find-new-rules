@@ -1,4 +1,4 @@
-## 5.0.0 (UNRELEASED)
+## 5.0.0 (2024-01-17)
 - Update dependencies.
 - Add support for Stylelint 16.
 - [BREAKING] Remove support for Stylelint < 16.

@@ -1,6 +1,6 @@
 {
     "name": "stylelint-find-new-rules",
-    "version": "4.1.2",
+    "version": "5.0.0",
     "description": "Find stylelint rules that you don't have in your config",
     "homepage": "https://github.com/Donov4n/stylelint-find-new-rules",
     "license": "MIT",
