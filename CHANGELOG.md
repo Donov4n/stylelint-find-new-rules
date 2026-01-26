@@ -1,4 +1,4 @@
-## 6.0.0 (UNRELEASED)
+## 6.0.0 (2026-01-26)
 - Update dependencies.
 - Add support for Stylelint 17.
 - [BREAKING] Remove support for Stylelint < 17.
