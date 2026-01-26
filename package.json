@@ -22,20 +22,19 @@
     },
     "dependencies": {
         "columnify": "~1.6.0",
-        "picocolors": "^1.0.0",
-        "read-package-up": "^11.0.0",
-        "read-pkg": "^9.0.1",
-        "yargs": "~17.7.2"
+        "picocolors": "^1.1.1",
+        "read-pkg": "^10.0.0",
+        "yargs": "~18.0.0"
     },
     "devDependencies": {
-        "@pulsanova/eslint-config-node": "~2.3.0",
-        "eslint": "^8.56.0",
-        "stylelint": "^16"
+        "@pulsanova/eslint-config-node": "~3.1.2",
+        "eslint": "~9.39.2",
+        "stylelint": "^17"
     },
     "peerDependencies": {
-        "stylelint": "^16"
+        "stylelint": "^17"
     },
     "engines": {
-        "node": ">=18.12.0"
+        "node": ">=20.19.0"
     }
 }

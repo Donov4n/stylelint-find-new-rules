@@ -1,3 +1,9 @@
+## 6.0.0 (UNRELEASED)
+- Update dependencies.
+- Add support for Stylelint 17.
+- [BREAKING] Remove support for Stylelint < 17.
+- [BREAKING] This package now require node >= 20.19.0.
+
 ## 5.0.1 (2025-12-18)
 - Fix the Stylelint core rules URL in reports.
 
