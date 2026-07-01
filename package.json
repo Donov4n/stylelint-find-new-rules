@@ -12,7 +12,13 @@
     "contributors": [
         "Alex Ilyaev"
     ],
-    "exports": "./lib/index.js",
+    "exports": {
+        ".": {
+            "types": "./index.d.ts",
+            "default": "./lib/index.js"
+        }
+    },
+    "types": "./index.d.ts",
     "type": "module",
     "bin": {
         "stylelint-find-new-rules": "bin/stylelint-find-new-rules.js"
