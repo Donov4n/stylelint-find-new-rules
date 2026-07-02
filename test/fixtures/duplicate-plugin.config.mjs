@@ -1,14 +1,11 @@
-const cssRule = () => {};
-const scssRule = () => {};
-
 const plugin = [
     {
         ruleName: 'fixture/no-css',
-        rule: cssRule,
+        rule: () => {},
     },
     {
         ruleName: 'fixture/no-scss',
-        rule: scssRule,
+        rule: () => {},
     },
 ];
 

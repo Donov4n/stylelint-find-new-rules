@@ -1,3 +1,8 @@
+## 6.1.0 (UNRELEASED)
+- Add TypeScript typings (#20, 👏 @MorevM).
+- Fix: Deduplicate plugin rules that could be reported multiple times 
+  when the same plugin is registered more than once (#21, 👏 @MorevM).
+
 ## 6.0.0 (2026-01-26)
 - Update dependencies.
 - Add support for Stylelint 17.

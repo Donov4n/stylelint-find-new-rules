@@ -1,0 +1,28 @@
+name: CI
+on: [push, pull_request]
+jobs:
+    "Lint":
+        runs-on: ubuntu-latest
+        strategy:
+            fail-fast: false
+            matrix:
+                node-version: ['20.19.0', '22', '24']
+        steps:
+            - uses: actions/checkout@v6
+            - uses: actions/setup-node@v4
+              with: { node-version: '${{ matrix.node-version }}' }
+            - run: npm ci
+            - run: npm run lint -- --max-warnings 0 --color
+
+    "Test":
+        runs-on: ubuntu-latest
+        strategy:
+            fail-fast: false
+            matrix:
+                node-version: ['20.19.0', '22', '24']
+        steps:
+            - uses: actions/checkout@v6
+            - uses: actions/setup-node@v4
+              with: { node-version: '${{ matrix.node-version }}' }
+            - run: npm ci
+            - run: npm test
