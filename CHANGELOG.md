@@ -1,4 +1,4 @@
-## 6.1.0 (UNRELEASED)
+## 6.1.0 (2026-07-02)
 - Update dependencies.
 - Add TypeScript typings (#20, 👏 @MorevM).
 - Fix: Deduplicate plugin rules that could be reported multiple times 
