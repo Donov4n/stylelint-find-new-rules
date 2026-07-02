@@ -18,7 +18,8 @@
         "stylelint-find-new-rules": "bin/stylelint-find-new-rules.js"
     },
     "scripts": {
-        "lint": "eslint --ext .js lib"
+        "lint": "eslint --ext .js lib",
+        "test": "node --test test/*.test.js"
     },
     "dependencies": {
         "columnify": "~1.6.0",
